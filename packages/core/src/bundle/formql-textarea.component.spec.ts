@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormQLTextareaComponent } from './formql-textarea.component';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('FormQLTextareaComponent', () => {
   let component: FormQLTextareaComponent;
@@ -8,9 +10,9 @@ describe('FormQLTextareaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormQLTextareaComponent ]
-    })
-    .compileComponents();
+      imports: [CommonModule, ReactiveFormsModule],
+      declarations: [FormQLTextareaComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +21,7 @@ describe('FormQLTextareaComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });

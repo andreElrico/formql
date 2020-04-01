@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormQLRadioComponent } from './formql-radio.component';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('FormQLRadioComponent', () => {
   let component: FormQLRadioComponent;
@@ -8,6 +10,7 @@ describe('FormQLRadioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [CommonModule, ReactiveFormsModule],
       declarations: [ FormQLRadioComponent ]
     })
     .compileComponents();
@@ -19,7 +22,7 @@ describe('FormQLRadioComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });

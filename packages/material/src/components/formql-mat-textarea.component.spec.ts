@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormQLMatTextareaComponent } from './formql-mat-textarea.component';
+import { CommonModule } from '@angular/common';
+import { FormQLInternalMaterialModule } from '../formql-internal-material';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('FormQLMatTextareaComponent', () => {
     let component: FormQLMatTextareaComponent;
@@ -8,9 +12,11 @@ describe('FormQLMatTextareaComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
+            imports: [CommonModule,
+                      FormQLInternalMaterialModule,
+                      ReactiveFormsModule],
             declarations: [FormQLMatTextareaComponent]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {
@@ -19,7 +25,7 @@ describe('FormQLMatTextareaComponent', () => {
         fixture.detectChanges();
     });
 
-    it('should create', () => {
+    test('textarea', () => {
         expect(component).toBeTruthy();
     });
 });

@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormQLMatFormFieldComponent } from './formql-mat-form-field.component';
+import { TextMaskModule } from 'examples/01-starter-example/node_modules/angular2-text-mask/dist/angular2TextMask';
+import { CommonModule } from '@angular/common';
+import { FormQLInternalMaterialModule } from '../formql-internal-material';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('FormQLMatFormFieldComponent', () => {
     let component: FormQLMatFormFieldComponent;
@@ -8,9 +12,11 @@ describe('FormQLMatFormFieldComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
+            imports: [CommonModule,
+                      FormQLInternalMaterialModule,
+                      ReactiveFormsModule],
             declarations: [FormQLMatFormFieldComponent]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {
@@ -19,7 +25,7 @@ describe('FormQLMatFormFieldComponent', () => {
         fixture.detectChanges();
     });
 
-    it('should create', () => {
+    test('should create FormQLMatFormFieldComponent', () => {
         expect(component).toBeTruthy();
     });
 });

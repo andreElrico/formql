@@ -2,14 +2,13 @@ language: node_js
 node_js:
   - "10"
   - "11"
-  
+
 branches:
   only:
   - master
 before_install:
-  - npm install -g @angular/cli@7.3.8
+
 install:
   - npm ci
-  - npm run npm_build_library
   
- 
+  

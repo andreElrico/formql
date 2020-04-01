@@ -2,6 +2,7 @@ import { Component, Input, forwardRef, OnInit } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, NG_VALIDATORS, Validators, FormControl } from '@angular/forms';
 import { FormComponent, FormValidator } from '@INTERNAL_formql/core';
 import createNumberMask from 'text-mask-addons/dist/createNumberMask';
+import { ValidatorFn } from '@angular/forms';
 
 @Component({
     selector: 'app-tailwind-select-field',
@@ -44,7 +45,7 @@ export class AppTailwindSelectFieldComponent implements OnInit, ControlValueAcce
     static formQLComponent = true;
 
     static validators = [
-        <FormValidator>{
+        <FormValidator> <unknown>{
             name: 'Required',
             validator: Validators.required,
             key: 'required'

@@ -35,7 +35,7 @@ export class AppTailwindTextFieldComponent implements OnInit, ControlValueAccess
     static formQLComponent = true;
 
     static validators = [
-        <FormValidator>{
+        <FormValidator> <unknown>{
             name: 'Required',
             validator: Validators.required,
             key: 'required'

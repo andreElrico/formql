@@ -1,8 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "./examples/04-validator-dev-project/dist/out-tsc",
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
@@ -11,16 +11,12 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5",
-    "paths": {
-      "@INTERNAL_formql/core": ["../../packages/core/src/public_api"],
-      "@INTERNAL_formql/editor": ["../../packages/editor/src/public_api"]
-    },
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
       "es2018",
       "dom"
-    ],
-  },
+    ]
+  }
 }

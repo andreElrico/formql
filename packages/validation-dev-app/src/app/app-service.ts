@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { IFormQLService, FormWindow, FormDataSource } from "@INTERNAL_formql/core";
+import { IFormQLService, FormWindow, FormDataSource } from "@formql/core";
 import { of, throwError } from 'rxjs';
 import { HttpClient } from "@angular/common/http";
 

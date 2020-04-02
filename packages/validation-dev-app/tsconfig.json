@@ -9,7 +9,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
-    "types": ["jest"],
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
@@ -20,16 +19,16 @@
     ],
     "paths": {
       "@formql/core": [
-        "dist/formql"
+        "../../packages/core/src/public_api"
       ],
       "@formql/editor": [
-        "dist/formql-editor"
+        "../../packages/editor/src/public_api"
       ],
       "material": [
-        "dist/material"
+        "../../dist/material"
       ],
       "material/*": [
-        "dist/material/*"
+        "../../dist/material/*"
       ]
     }
   }

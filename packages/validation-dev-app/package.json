@@ -25,6 +25,8 @@
     "@angular/router": "~8.2.4",
     "angular2-text-mask": "9.0.0",
     "angular2-uuid": "1.1.1",
+    "@formql/core": "file:../../dist/formql",
+    "@formql/editor": "file:../../dist/formql-editor/",
     "text-mask-addons": "3.8.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",

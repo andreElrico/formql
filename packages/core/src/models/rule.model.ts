@@ -14,7 +14,14 @@ export interface FormRule {
 export interface FormValidator {
     name: string;
     key: string;
-    validator?: ValidatorFn;
+    validator: ValidatorFn;
+    parameters: any;
+}
+
+export interface FormValidatorFn {
+    name: string;
+    key: string;
+    validator: ValidatorFn;
     parameters?: any;
     // default message, can be overwritten in component editor
     errorMessage?: string;

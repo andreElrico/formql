@@ -52,7 +52,7 @@ export class ComponentEditorComponent implements OnInit {
             }
 
         this.component = HelperService.propertyCopy(this.updatedComponent, this.component, ['value']);
-        this.action.emit(this.component);
+        // this.action.emit(this.component);
     }
 
     getEvaluatedValue(condition) {
